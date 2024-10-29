@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +15,11 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div id="root" class="w-full max-w-md mx-auto bg-white rounded-lg shadow-lg p-6"></div>
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div id="root" class="w-full max-w-md mx-auto bg-[#fc466b] rounded-lg shadow-lg p-6"></div>
     <script type="text/babel">
         const App = () => {
-            const [noButtonPosition, setNoButtonPosition] = React.useState({ top: '50%', left: '50%' });
+            const [noButtonPosition, setNoButtonPosition] = React.useState({ top: '50%', left: '60%' });
 
             const handleYesClick = () => {
                 alert("Yay! I love you too!");
@@ -34,13 +33,8 @@
 
             return (
                 <div className="text-center relative">
-                    <h1 className="text-3xl font-bold mb-4">Do You Love Me?</h1>
-                    <img 
-                        src=""
-                        alt="" 
-                        className="" 
-                    />
-                    <p className="text-lg mb-6">I've been meaning to ask you this for a while...</p>
+                    <h1 className="text-3xl font-bold mb-4 text-white">Do You Love Me?</h1>
+                    <p className="text-lg mb-6 text-white">I've been meaning to ask you this for a while...</p>
                     <div className="flex justify-center space-x-4 mb-4">
                         <button onClick={handleYesClick} className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition duration-300">
                             <i className="fas fa-heart"></i> Yes
